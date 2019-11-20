@@ -1,0 +1,23 @@
+USER INFO TABLE
+---------------------------------------
+CREATE TABLE USER_INFO(FIRST_NAME VARCHAR2(20)NOT NULL,MIDDLE_NAME VARCHAR2(20),LAST_NAME VARCHAR2(20) NOT NULL,DOB DATE NOT NULL, MOBILE_NO NUMBER NOT NULL, AADHAR_CARD_NO NUMBER NOT NULL, P_ADDRESS VARCHAR2(100) NOT NULL, R_ADDRESS VARCHAR2(100) NOT NULL, OCC VARCHAR(10) NOT NULL, INCOME NUMBER NOT NULL, EMAIL_ID VARCHAR(50) NOT NULL, USER_ID VARCHAR(10) NOT NULL PRIMARY KEY);
+
+INSERT INTO USER_INFO VALUES("SOHAM", NULL, "HASABNIS", "1998-01-09", 9955995599, 123456789123, SANGLI, SANGLI, "PRIVATE", 100000, "SOHAM.HASABNIS@LNTINFOTECH.COM", "3ABC78" )
+
+
+Transaction Table
+-------------------------------------------
+create table transaction(Tx_id number not null primary key,account_no number not null ,Amount number not null,Description varchar2(20) not null, txdate DATE NOT NULL,  FOREIGN KEY(ACCOUNT_NO)REFERENCES ACCOUNT (ACCOUNT_NO) );
+
+Account Table
+-------------------------------------------
+CREATE TABLE ACCOUNT(ACCOUNT_NO NUMBER NOT NULL primary key,TYPE VARCHAR(20) NOT NULL,BALANCE NUMBER NOT NULL);
+
+Status_log Table
+-----------------------------------------
+create table login(user_id varchar(10) not null primary key, account_no number not null, FOREIGN KEY(ACCOUNT_NO)REFERENCES ACCOUNT (ACCOUNT_NO), status varchar(20) not null);
+
+Login table
+----------------------------------------
+create table login( user_id varchar(10) not null primary key, login_pass varchar(50) not null, txn_pass varchar(50) not null);
+
