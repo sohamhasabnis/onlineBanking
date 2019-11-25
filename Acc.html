@@ -1,58 +1,109 @@
 <html>
 <head>
-<title>Register Page</title>
+<title>Account Creation Page</title>
 <style>
                 div {
-                        height: 1000px;
+                        height: 2000px;
                         width: 50%;
-                        background-color: lightblue;
+                        background-color: peachpuff;
                         border-style: solid;
+						padding: 20px;
                       } 
         
                </style>
 </head>
 <body>
-                <center>
+      <center>          
                 <div>    
-        <center>
-<form>
-<h2><span style="border: 1px solid black "></b>Open A Savings Account</span></h2>
+   
+
+<center><h2><span style="border: 1px solid black "></b>Open A Savings Account</span></h2></center>
 <br>
-</center>
+
 <h3><span style="border: 1px solid black "></b>Personal Details</span></h3>
 <br>
 
-<pre
->
-<center>Title:	          <input type="text" name="userid"></center>
+<pre>
+  Title:          <select style="width: 150px;>
+  <option value="volvo">Ms</option>
+  <option value="saab">Mrs</option>
+  <option value="opel">Mr</option>
+</select>
 <br><br>
-<center>First Name:       <input type="password" name="password"></center>
+ First Name:      <input type="text" name="FirstName">
 <br><br>
-<center>Middle Name:	  <input type="password" name="password"></center>
+Middle Name:	  <input type="text" name="MiddleName">
 <br><br>
-<center>Last Name:	      <input type="password" name="password"></center>
+Last Name:  	  <input type="text" name="LastName">
 <br><br>
-<center>Father's Name:	  <input type="password" name="password"></center>
+Father's Name:	  <input type="text" name="name">
 <br><br>
-<center>Mobile Number:	  <input type="text" name="otp"></center>
+Mobile Number:	  <input type="text" name="Mobile">
 <br><br> 
-<center>Email ID:	      <input type="text" name="email"></center>
+Email ID:    	  <input type="text" name="email">
 <br><br>
-<center>Aadhar Card No.:  <input type="text" name="Aadhar_no"></center>
+Aadhar Card No.:  <input type="text" name="Aadhar_no">
 <br><br>
-<center>Date of Birth:	  <input type="text" name="DOB"></center>
+Date of Birth:	  <input type="text" name="DOB">
+ <br>
+ <br>
+ <br>
+<b>Residential Address:</b>
+<br>
+a)Address Line 1 -   <input type="text" name="Address1"><br>
+b)Address Line 2-    <input type="text" name="Address2"><br>
+c)Landmark-          <input type="text" name="Landmark"><br>
+d)State-             <input type="text" name="State"><br>
+e)City-              <input type="text" name="City"><br>
+f)Pincode-           <input type="text" name="Pincode">
+<br><br>
+<b>Permanent Address:</b>
+<br>
+<input type="checkbox" name="vehicle1" value="Bike">Permanent Address same as Mailing Address
+<br>
+a)Address Line 1 -   <input type="text" name="Address1"><br>
+b)Address Line 2-    <input type="text" name="Address2"><br>
+c)Landmark-          <input type="text" name="Landmark"><br>
+d)State-             <input type="text" name="State"><br>
+e)City-              <input type="text" name="City"><br>
+f)Pincode-           <input type="text" name="Pincode">
+<br><br>
+<b>Occupation Details:</b>
+<br>
+a)Occupation Type-    <select style="width: 150px;>
+  <option value="volvo">Private</option>
+  <option value="saab">Government</option>
+  <option value="opel">Business</option>
+</select>
+<br>
+b)Source of Income-    <select style="width: 150px;>
+  <option value="Service">Service</option>
+  <option value="Business">Business</option>
+  <option value="Pension">Pension</option>
+  <option value="Others">Others</option>
+</select>
+<br>
+c)Gross Annual Income-  <select style="width: 150px;>
+  <option value="first">Below 15,000</option>
+  <option value="second">15,000-30,000</option>
+  <option value="third">30,000-45,000</option>
+  <option value="fourth">Above 45,000</option>
+</select>
+<br><br>
+<b>Debit/ATM Card</b>
+<br>
+Do you want a Debit Card?
+<br>
+<input type="checkbox" name="Opt" value="Opt">Opt for Net Banking<br>
+<input type="checkbox" name="Agree" value="Agree">I Agree...
+<br><br>
 </pre>
- <br>
- <br>
-Residential Address:
-<input type="checkbox" name="vehicle1" value="Bike">Opt for Net Banking<br>
-<input type="checkbox" name="vehicle1" value="Bike">Opt for Net Banking<br>
 <center><input type="button" value="Submit"><br><br></center>
-<center>
+
+
         
 </div>
-</center
-</form>
+</center>
 </body>
 
 </html>
